@@ -6,16 +6,15 @@
 main {
     max-width: 1200px;
     /*no tiene margen arriba y abajo solo se ajusta a los lados*/
-    margin: 0 auto;
-    height: 800px;
+    margin: auto;
 }
 
 .contenedor {
     border: 5px solid green;
     background-color: purple;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: 20% 60% 10%;
+    grid-template-columns: 50% 50%; 
+    /*grid-auto-rows: 20% 60% 10%;*/
     grid-template-areas: 
         "header header"
         "main main"
@@ -51,11 +50,13 @@ h1 {
 .item-contenedor-2 {
     background-color: pink;
     grid-area: main;
+
 }
 
 .item-contenedor-3 {
     background-color: aqua;
     grid-area: footer;
+    padding: 15px;    
 }
 
 .tittle-img {
@@ -70,8 +71,10 @@ h1 {
 /* Se crea la grilla de dos columnas y una fila centradas */
 .hero {
     display: grid; /*cre la grilla*/
-    grid-template-columns: 350px 350px;  /*columnas iguales sin que se modifique su valor*/
-    grid-template-rows: 600px;
+    grid-template-columns: repeat(auto-fit, minmax(35px, 350px));
+    grid-auto-rows: 2fr;
+    /*grid-template-columns: 350px 350px;*/  /*columnas iguales sin que se modifique su valor*/
+    /*grid-template-rows: 600px;*/
     border-bottom: 1px solid #ddd;
     /*background-color: rgb(29, 117, 168); */
     gap: 10px;
@@ -91,6 +94,7 @@ h1 {
     margin-top: 20px;
 }
 
+/*Estilos de la parte superior del lado izquierdo*/
 .info-right-up {
     display: inline-flex;
     margin: 15px;
@@ -314,11 +318,18 @@ h2 {
 /*Media Query para hacer la pokeapi responsive*/
 @media screen and (max-width: 768px) {
     .hero {
-        grid-template-columns: minmax(300px);
+        grid-template-columns: minmax(300px) minmax(300px);
         justify-content: center;
     }
     .item {
-        grid-template-columns: minmax(300px 300px);
+        grid-template-columns: minmax(300px);
+        justify-content: center;
+    }
+    .tittle-img {
+        display: none;
+    }
+    .item-contenedor-1 {
+        grid-template-rows: 50px;
         justify-content: center;
     }
 }
