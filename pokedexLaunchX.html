@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="./img/pokeBall.png" type="image/x-icon">
+    <link rel="stylesheet" href="pokedexLaunchX.css">>
+</head>
+<body class="contenedor">
+    <div class="item-contenedor-1">
+        <img class="tittle-img" src="./img/pokemon.png" alt="titulo pokemon">
+        <h1>Pokedex-LaunchX</h1>
+    </div>
+    <div class="item-contenedor-2">
+        <main>        
+            <section class="hero">
+                <!-- Estructura del lado derecho -->
+                <div class="item">
+                    <div class="info-right-up">
+                        <div class="item-circle-1"></div>
+                        <div class="item-circle-2"></div>
+                        <div class="item-circle-3"></div>
+                        <div class="item-circle-4"></div>
+                    </div>
+                    <div class="info-principal">
+                        <h2 class="info-name" id="info-name">Nombre</h2>
+                        <img class="info-img" id="info-img" src="./img/pokeBall.gif" alt=""> <br>
+                        <div class="extrainfo-poke">
+                            <h3 class="info-pokeId">Id:</h3>
+                            <h3 class="info-id" id="info-id" style="margin-left: 10px;">000</h3>
+                        </div>
+                        <!--<p class="info-text" id="info-text">Descripción esta es una descricion muy 
+                            corta de pokemon que es una apidex para el portecto
+                            de LaunchX por parte innovacción virtual.
+                        </p> -->
+                    </div>
+                    <div class="info-right-down">
+                        <div class="item-circle-5"></div>
+                        <div class="item-rectangle-1"></div>
+                        <div class="item-rectangle-2"></div>
+                    </div>
+                    <div class="info-right-down-2">
+                        <input type="text" class="info-input" id="info-input" name="info-input" placeholder="Buscar Pokemon"><br>
+                        <button onclick="fetchPokemon()" class="info-button" name="info-button" id="info-button"><ion-icon name="game-controller-outline"></ion-icon></button>
+                    </div>   
+                </div>  
+                <div class="item">
+                    <!-- Estructura del lado izquierdo -->
+                    <div class="info-caraceristics">
+                        <div class="info-pokeHability" style="display: inline-flex;">
+                            <h3 class="pokeHability">Habilidad:</h3>
+                            <h3 class="pokemonHability estilo" id="pokemonHability">0</h3>
+                        </div><br>
+                        <div class="info-pokeTipo" style="display: inline-flex;">
+                            <h3 class="pokeTipo">Tipo:</h3>
+                            <h3 class="pokemonTipo estilo" id="pokemonTipo">0</h3>
+                        </div><br>
+                        <div class="info-pokeAltura" style="display: inline-flex;">
+                            <h3 class="pokeAltura">Altura:</h3>
+                            <h3 class="pokemonAltura estilo" id="pokemonAltura">0</h3>
+                        </div><br>
+                        <div class="info-pokePeso" style="display: inline-flex;">
+                            <h3 class="pokePeso">Peso:</h3>
+                            <h3 class="pokemonPeso estilo" id="pokemonPeso">0</h3>
+                        </div><br>
+                        <div class="info-pokePS" style="display: inline-flex;">
+                            <h3 class="pokePS">PS:</h3>
+                            <h3 class="pokemonPS estilo" id="pokemonPS">0</h3>
+                        </div><br>
+                        <div class="info-pokeAtaque" style="display: inline-flex;">
+                            <h3 class="pokePokeAtaque">Ataque:</h3>
+                            <h3 class="pokemonPokeAtaque estilo" id="pokemonPokeAtaque">0</h3>
+                        </div><br>
+                        <div class="info-pokeDefensa" style="display: inline-flex;">
+                            <h3 class="pokePokeDefensa">Defensa:</h3>
+                            <h3 class="pokemonDefensa estilo" id="pokemonDefensa">0</h3>
+                        </div><br>
+                        <div class="info-pokeVelocidad" style="display: inline-flex;">
+                            <h3 class="pokePokeVelocidad">Velocidad:</h3>
+                            <h3 class="pokemonVelocidad estilo" id="pokemonVelocidad">0</h3>
+                        </div><br>
+                        <div class="info-pokeAtEspecial" style="display: inline-flex;">
+                            <h3 class="pokeAtEspecial">Ataque Especial:</h3>
+                            <h3 class="pokemonAtEspecial estilo" id="pokemonAtEspecial">0</h3>
+                        </div><br>
+                        <div class="info-pokeDefEspecial" style="display: inline-flex;">
+                            <h3 class="pokeDefEspecial">Defensa Especial:</h3>
+                            <h3 class="pokemonDefEspecial estilo" id="pokemonDefEspecial">0</h3>
+                        </div><br>
+                        <div class="info-total" style="display: inline-flex;">
+                            <h3 class="total">Total:</h3>
+                            <h3 class="pokeTotal estilo" id="total">0</h3>
+                        </div>
+                    </div>
+                    <div class="item-left-circle">
+                        <img src="./img/poke.gif" alt="poke animada" class="poke-animado">
+                        <div class="item-circle-yellow"></div>
+                        <div class="item-circle-green"></div>
+                    </div>
+                </div> 
+            </section>
+        </main>
+    </div>
+    <div class="item-contenedor-3">
+        <h2>© Marzo 2022 por Lucero L.E.</h2>
+    </div>
+
+
+    <!-- Script de JS de la API -->
+    <script src="./pokedexLaunchX.js"></script>
+    <!-- script para el los iconos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

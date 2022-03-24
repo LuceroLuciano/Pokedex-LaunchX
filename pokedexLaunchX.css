@@ -1,0 +1,324 @@
+* {
+    
+}
+
+/* Estilos del main */
+main {
+    max-width: 1200px;
+    /*no tiene margen arriba y abajo solo se ajusta a los lados*/
+    margin: 0 auto;
+    height: 800px;
+}
+
+.contenedor {
+    border: 5px solid green;
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 20% 60% 10%;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+.item-contenedor {
+    font-size: 10rem;
+}
+
+.item-contenedor-1 {
+    background-color: aqua;
+    grid-area: header;
+    place-content: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.tittle-img {
+    place-content: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}   
+
+h1 {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.item-contenedor-2 {
+    background-color: pink;
+    grid-area: main;
+}
+
+.item-contenedor-3 {
+    background-color: aqua;
+    grid-area: footer;
+}
+
+.tittle-img {
+    height: 120px;
+    width: 600px;
+    grid-area: header; 
+    justify-content: center;
+    align-content: center;
+    margin-left: 200px;
+}
+
+/* Se crea la grilla de dos columnas y una fila centradas */
+.hero {
+    display: grid; /*cre la grilla*/
+    grid-template-columns: 350px 350px;  /*columnas iguales sin que se modifique su valor*/
+    grid-template-rows: 600px;
+    border-bottom: 1px solid #ddd;
+    /*background-color: rgb(29, 117, 168); */
+    gap: 10px;
+    justify-content: center;
+    place-content: center;
+    margin-top: 10px;
+    border-radius: 40px;
+
+}
+
+.item {
+    border: 5px solid rgb(65, 11, 11);
+    background-color: red;
+    place-items: center;
+    border-radius: 35px 35px 35px 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.info-right-up {
+    display: inline-flex;
+    margin: 15px;
+    padding-top: 10px;
+    /*background-color: green;*/
+    width: 300px;
+    height: 50px;
+}
+
+.item-circle-1 {
+    border-radius: 50%;
+    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.item-circle-2 {
+    border-radius: 50%;
+    background-color: rgba(158, 15, 15, 0.74);
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.item-circle-3 {
+    border-radius: 50%;
+    background-color: rgba(228, 224, 11, 0.74);
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.item-circle-4 {
+    border-radius: 50%;
+    background-color: rgba(62, 228, 11, 0.788);
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.info-principal {
+    width: 310px;
+    height: 300px;
+    background-color: rgb(246, 252, 250);
+    border: 7px solid rgba(65, 63, 63, 0.753);
+    margin: 8px;
+    border-radius: 5% 5% 5% 50px;
+}
+
+.info-principal .info-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.info-principal img {
+    width: 170px;
+    height: 170px;  
+    padding-top: 1px;  
+    margin-left: 70px;
+}
+
+
+.extrainfo-poke {
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-align: center;
+    padding-left: 110px;
+    letter-spacing: 1.2px;
+}
+
+.info-principal p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 13px;
+}
+
+/*Estilos de los apartados para las caracteristicas principales de los pokemon*/
+.info-caraceristics {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 250px;
+    height: 400px;  
+    padding-top: 20px; 
+    padding-left: 40px;
+    margin: 20px;
+    color: #333;
+    border: 5px solid #333;
+    border-radius: 20px 20px 20px 50px;
+    background-color: yellow;
+    line-height: 5px;
+}
+
+.info-caraceristics .estilo {
+    color: blue;
+    text-transform: uppercase;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/*Estilos de los ultimo circulos de la parte derecha*/
+.item-left-circle {
+    display: inline-flex;
+    position: relative;
+    padding-bottom: 2px;
+    margin-left: 25px;
+    width: 300px;
+    height: 50px
+}
+
+.item-left-circle img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.item-circle-yellow {
+    border-radius: 50%;
+    background-color: rgb(15, 15, 241);
+    width: 35px;
+    height: 35px;
+    margin-left: 130px;
+}
+
+.item-circle-green {
+    border-radius: 50%;
+    background-color: rgba(62, 228, 11, 0.788);
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.info-right-down {
+    display: inline-flex;
+    margin-left: 20px;
+    padding-top: 5px;
+    width: 300px;
+    height: 50px;
+}
+
+.item-circle-5 {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color:  rgba(32, 107, 192, 0.842);
+    border-color: 5px solid pink;
+}
+
+.item-rectangle-1 {
+    width: 80px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(102, 255, 0);
+    margin: 8px;
+}
+
+.item-rectangle-2 {
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: yellow;
+    margin: 10px;
+}
+
+.info-right-down-2 {
+    display: inline-flex;
+    margin-left: 20px;
+    padding-top: 5px;
+    width: 300px;
+    height: 50px;
+}
+
+.info-input {
+    background-color: yellow;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-weight: bolder;
+}
+
+
+.info-button {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: rgb(204, 18, 18);;
+    margin-left: 10px;
+}
+
+/*.info-button:hover {
+    background-color: rgb(204, 18, 18);
+} */
+
+ion-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+ion-icon:hover {
+    color: rgb(13, 13, 209);
+}
+
+/*Estilos de la parte final  */
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*Media Query para hacer la pokeapi responsive*/
+@media screen and (max-width: 768px) {
+    .hero {
+        grid-template-columns: minmax(300px);
+        justify-content: center;
+    }
+    .item {
+        grid-template-columns: minmax(300px 300px);
+        justify-content: center;
+    }
+}
