@@ -10,8 +10,11 @@ main {
 }
 
 .contenedor {
-    border: 5px solid green;
-    background-color: purple;
+    /*border: 5px solid green;*/
+    background-image: url(./img/fondoPokemon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: grid;
     grid-template-columns: 50% 50%; 
     /*grid-auto-rows: 20% 60% 10%;*/
@@ -26,7 +29,7 @@ main {
 }
 
 .item-contenedor-1 {
-    background-color: aqua;
+    background-image: linear-gradient(red, #fff);
     grid-area: header;
     place-content: center;
     justify-content: center;
@@ -48,13 +51,16 @@ h1 {
 }
 
 .item-contenedor-2 {
-    background-color: pink;
+    background-image: url(./img/fondoPokemon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     grid-area: main;
 
 }
 
 .item-contenedor-3 {
-    background-color: aqua;
+    background-image: linear-gradient(#fff, red);;
     grid-area: footer;
     padding: 15px;    
 }
